@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-name: namespace-management
-spec:
-destination:
-  name: 'myapp'
+  name: namespace-management
   namespace: default
-  server: 'https://kubernetes.default.svc'
-source:
-  path: namespaces-config
-  repoURL: 'https://github.com/Navid284/blog-example-repo.git'
-  targetRevision: HEAD
-project: default
+spec:
+	project: default
+	source:
+		path: namespaces-config
+		repoURL: 'https://github.com/Navid284/blog-example-repo.git'
+		targetRevision: HEAD
+	destination:
+		namespace: default
+		server: 'https://kubernetes.default.svc'
