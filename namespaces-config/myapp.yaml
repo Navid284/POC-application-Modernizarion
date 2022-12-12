@@ -1,14 +1,25 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-management
-  namespace: default
+  name: myapp
+  namespace: argocd
 spec:
-  project: default
+  project: myapp
   source:
     path: namespaces-config
     repoURL: 'https://github.com/Navid284/blog-example-repo.git'
-    targetRevision: HEAD
+    targetRevision: TEST
   destination:
     namespace: default
     server: 'https://kubernetes.default.svc'
+  sourceRepos:
+    - '*'
+  roles:
+    - description: project role to create and sync apps from a CI/CD pipeline
+      name: create-sync
+      policies:
+      - p, proj:myapp:create-sync, applications, get, myapp/*, allow
+      - p, proj:myapp:create-sync, applications, create, myapp/*, allow
+      - p, proj:myapp:create-sync, applications, update, myapp/*, allow
+      - p, proj:myapp:create-sync, applications, delete, myapp/*, allow
+      - p, proj:myapp:create-sync, applications, sync, myapp/*, allow
