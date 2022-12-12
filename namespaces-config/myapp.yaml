@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp
-  namespace: argocd
+  name: argocd
+  namespace: openshift-gitops
 spec:
-  project: myapp
+  project: default
   source:
     path: namespaces-config
     repoURL: 'https://github.com/Navid284/blog-example-repo.git'
