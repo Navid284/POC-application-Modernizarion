@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: quota-team1
+  name: resource-quota
   namespace: namespace-team1
   annotations:
     argocd.argoproj.io/sync-wave: "0"
