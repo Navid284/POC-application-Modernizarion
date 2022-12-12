@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: myapp
 destination:
-  name: 'argocd'
+  name: 'myapp'
   namespace: default
   server: 'https://kubernetes.default.svc'
 source:
