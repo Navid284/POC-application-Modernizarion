@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: namespace-team1
+  name: dev
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
+  labels:
+    argocd.argoproj.io/managed-by: openshift-gitops
