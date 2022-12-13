@@ -32,4 +32,6 @@ which is very valubale feature for a financial application.
 image::workflow.jpg[workflow after design implementation]
 ```
 
+image::workflow.jpg[workflow after design implementation]
+
 
