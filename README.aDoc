@@ -1,0 +1,11 @@
+:imagesdir: images
+:couchbase_version: current
+:toc:
+:project_id: how
+:icons: font
+:source-highlighter: prettify
+:tags: guides,meta
+
+= POC-application-Modernizarion
+application modernization using OpenShift, GitOps, Argo CD, and multipe namespaces 
+
