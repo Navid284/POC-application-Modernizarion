@@ -1,7 +1,5 @@
-:imagesdir: images
 :couchbase_version: current
 :toc:
-:project_id: how
 :icons: font
 :source-highlighter: prettify
 :tags: guides,meta
@@ -28,10 +26,7 @@ It can be used as different environment stage (Production, Developing, Productio
 or Can be used for different departments as well which helps to dedicate necessary resources, limitations, security and protection 
 which is very valubale feature for a financial application.  
 
-```
-image::workflow.jpg[workflow after design implementation]
-```
 
-image::workflow.jpg[workflow after design implementation]
+image::workflow1.jpg[workflow after design implementation]
 
 
